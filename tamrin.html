@@ -1,6 +1,7 @@
+<!--برای کلاس های دکمه اگ دوتا بی تی ان بزنی فرق میکنه-->
 <!DOCTYPE html>
 <html lang="fa">
-<head>
+<head id="aa">
     <meta charset="UTF-8">
     <title>project</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
@@ -12,30 +13,75 @@
     <div>
 
         <div id="div1">
+
             <input type="text" id="txtval" value="type here">
-            <button class="btn-info" id="btnval" style="margin: 5px">click me</button>
+            <button class="btn-light" id="btnval" style="margin: 5px">click me</button>
             <input type="text" id="txtresult">
 
         </div>
         <hr>
         <div id="div2">
+
             <a href="http://www.google.com" id="google" target="_blank">google</a>
             <button class="btn-warning" id="changehref">change</button>
+
         </div>
         <hr>
         <div id="div3">
+
             <input id="txtbtnchange" type="text">
             <button class="btn-danger" id="btnchange">hey push</button>
+
         </div>
         <hr>
         <div id="div4">
+
             <input type="text" id="txtdifrent"><br>
             <button id="btnafter" class="btn-info">click to after</button><br>
             <button id="btnbefore" class="btn-info">click to before</button><br>
             <button id="btnappend" class="btn-info">click to append</button><br>
             <button id="btnprepend" class="btn-info">click to prepend</button><br>
-        </div>
 
+        </div>
+        <hr>
+
+
+        <div id="div5">
+            <p id="txtedit">some text. some text. some text. some text.</p>
+
+
+            <button id="btnremove" class="btn btn-success">remove</button>
+            <button id="btnempty" class="btn btn-success">empty</button>
+
+        </div>
+        <hr>
+        <div id="div6">
+           
+            <p id="class">i love programing. i love programing.</p>
+            <input type="text" id="txtclass" style="margin: 2px"><br>
+            <button id="btnaddclass" class="btn-dark">add class</button>
+            <button id="btnremoveclass" class="btn-dark">remove class</button>
+            <button id="btntoggleclass" class="btn-dark">toggle class</button>
+            
+        </div>
+        <hr>
+        <div id="div7">
+            
+            <p id="css">i working JQuery.</p>
+            <input type="text" id="txtcss" style="margin: 2px">
+            <button id="btncss" class="btn-outline-info">set css</button>
+            
+        </div>
+        <hr>
+        <div id="div8">
+            <form>
+                
+                
+            <!--                دکمه ی فرم باید بین دو تگ فرم باشد تا کار کند و برای کل صفحه نیز کار میکند-->
+            <button class="btn btn-block">reset</button>
+            
+            </form>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
