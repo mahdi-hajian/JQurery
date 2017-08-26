@@ -1,6 +1,8 @@
+//تفاوت val و html
+//ول برای جاهایی ک ولیو میگیرد مثل تکست و اچ تی ام ال برای مثلا دکمه ها ک وسط دستور دو باتن متن را مینویسی
 $(document).ready(function () {
     $("#btnval").click(function () {
-        var name = $("#txtval").val();
+        var name = $("#txtval").val(); //give text from textbox  //if not val no ansver
         $("#txtresult").val(name);
 
     });
@@ -26,6 +28,7 @@ $(document).ready(function () {
         $("#btnbefore").before(dif);
 
     })
+    //برای متن داخل تکست فقط باید از دو دستور پایین استفاده کرد ک داخل خوده تکست باکس بنویسد
     $("#btnappend").click(function () {
 
         var dif = $("#txtdifrent").val()
