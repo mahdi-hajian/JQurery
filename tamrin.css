@@ -14,8 +14,17 @@
 }
 
 div {
-/*    width: 500px;*/
+/*    width: 100%;*/
     margin-left: auto;
     margin-right: auto;
     padding: 5px;
+/*    text-align: center;*/
 }
+.btn-block{
+    background-color:crimson;
+    color: skyblue;
+}
+#maindiv{
+    text-align: center;
+}
+
