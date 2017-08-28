@@ -1,65 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>pretty photo</title>
-    <link rel="stylesheet" href="tamrin.css">
-    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>bootstrap slider</title>
 
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="tamrin.css">
 </head>
 
 <body>
-    <div id="main">
-        <h2>Gallery</h2>
-        <ul class="gallery clearfix">
-            <li>
-                <a href="images/fullscreen/1.JPG?lol=lol" rel="prettyPhoto[gallery1]" title="very good"><img src="images/thumbnails/t_1.jpg" width="60" height="60" alt="دایره قرمز" /></a>
-            </li>
-            <li>
-                <a href="images/fullscreen/2.jpg" rel="prettyPhoto[gallery1]"><img src="images/thumbnails/t_2.jpg" width="60" height="60" alt="Nice building" /></a>
-            </li>
-            <li>
-                <a href="images/fullscreen/3.jpg" rel="prettyPhoto[gallery1]"><img src="images/thumbnails/t_3.jpg" width="60" height="60" alt="Fire!" /></a>
-            </li>
-            <li>
-                <a href="images/fullscreen/4.jpg" rel="prettyPhoto[gallery1]"><img src="images/thumbnails/t_4.jpg" width="60" height="60" alt="Rock climbing" /></a>
-            </li>
-            <li>
-                <a href="images/fullscreen/5.jpg" rel="prettyPhoto[gallery1]"><img src="images/thumbnails/t_5.jpg" width="60" height="60" alt="Fly kite, fly!" /></a>
-            </li>
-            <li>
-                <a href="images/fullscreen/6.jpg" rel="prettyPhoto[gallery1]"><img src="images/thumbnails/t_2.jpg" width="60" height="60" alt="Nice building" /></a>
-            </li>
-        </ul>
 
-        <h2>Gallery 2</h2>
-        <ul class="gallery clearfix">
-            <li>
-                <a href="images/fullscreen/3.jpg" rel="prettyPhoto[gallery2]" title="which on is better? "><img src="images/thumbnails/t_3.jpg" width="60" height="60" alt="اینا نمیدونم چیه!!" /></a>
-            </li>
-            <li>
-                <a href="images/fullscreen/4.jpg" rel="prettyPhoto[gallery2]" title="Description on a single line."><img src="images/thumbnails/t_4.jpg" width="60" height="60" alt="" /></a>
-            </li>
-            <li>
-                <a href="images/fullscreen/5.jpg" rel="prettyPhoto[gallery2]"><img src="images/thumbnails/t_5.jpg" width="60" height="60" alt="" /></a>
-            </li>
-            <li>
-                <a href="images/fullscreen/1.jpg" rel="prettyPhoto[gallery2]"><img src="images/thumbnails/t_1.jpg" width="60" height="60" alt="" /></a>
-            </li>
-            <li>
-                <a href="images/fullscreen/2.jpg" rel="prettyPhoto[gallery2]"><img src="images/thumbnails/t_2.jpg" width="60" height="60" alt="" /></a>
-            </li>
-        </ul>
+    <div id="all" style="margin: auto;
+    margin-top: 20px;
+    max-width: 1024px;
+    max-height: 397px;">
 
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/img1.png" alt="image 1">
+                    <div class="carousel-caption">
+                        image 1
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/img2.png" alt="image 2">
+                    <div class="carousel-caption">
+                        image 2
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/img3.png" alt="image 3">
+                    <div class="carousel-caption">
+                        image 3
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/img4.png" alt="image 4">
+                    <div class="carousel-caption">
+                        image 4
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </div>
-    
-    
-    
-    
-    <script src="js/jquery-1.6.1.min.js">
-    </script>
-    <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
-    <script src="tamrin.js"></script>
-</body>
 
-</html>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html
